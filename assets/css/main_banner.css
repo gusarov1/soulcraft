@@ -1,0 +1,450 @@
+.main_banner-pc{
+    width:100%;
+    height: 286px;
+    max-width: 615px;
+    /* margin:0 auto; */
+    border-radius: 33px;
+    position: relative;
+    /* overflow: hidden; */
+    background-color: #242635;
+}
+body, html{
+    overflow-x: hidden;
+}
+.main_banner-pc:hover > .vectors{
+    opacity: 0;
+}
+.main_banner-pc > .vectors{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    max-width: 1160px;
+    opacity: 1;
+    opacity: 0;
+    transition: 1.2s;
+    z-index: 1;
+    height: 100%;
+}
+.main_banner-pc:hover > .content > h3{
+    filter: blur(5px);
+}
+.main_banner-pc > .content > h3{
+    z-index: 10;
+}
+.main_banner-pc > .content{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    height: 100%;
+}
+.main_banner-pc > .content > h3.first_text{
+    text-transform: uppercase;
+    /* Играй на все 100 */
+    position: absolute;
+    width: 200px;
+    top:42px;
+    transition: 1.2s;
+    left:43px;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    font-family: 'Graphik LCG';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    /* line-height: 113px; */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    text-transform: uppercase;
+    /* text-shadow: 5px 4px 7px rgba(0, 0, 0, 0.27); */
+    /* text-shadow: 0px 0px 1px #FFF; */
+}
+.main_banner-pc > .content > h3.second_text{
+    text-transform: uppercase;
+    /* Играй на все 100 */
+    position: absolute;
+    width: 300px;
+    bottom:10px;
+    left:43px;
+    color:#fff;
+    transition: 1.2s;
+    font-family: 'Graphik LCG';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 113px;
+    text-transform: uppercase;
+    /* text-shadow: 5px 4px 7px rgba(0, 0, 0, 0.27); */
+    /* text-shadow: 0px 0px 1px #FFF; */
+}
+.main_banner-pc > .content > .card{
+    width: 449.78px;
+    height: 262.88px;
+    border-radius: 24px;
+    position: absolute;
+    right: -50px;
+    backdrop-filter: blur(40px) !important;
+    top:50px;
+    overflow: hidden;
+    transform-origin: center;
+    z-index: 3;
+    animation: main_banner__card_animation 10s ease-in-out infinite;
+    background: transparent;
+    transform:rotate(-5deg) scale(.7);
+}
+@keyframes main_banner__card_animation{
+    0%{
+        transform:rotate(-5deg) scale(.7);
+    }
+    50%{
+        transform:rotate(5deg) scale(.7);
+    }
+    100%{
+        transform:rotate(-5deg) scale(.7);
+    }
+}
+.main_banner-pc > .content > .card > .content{
+    position: absolute;
+    width: 100%;
+    border:2px solid rgb(90, 90, 90, 1);
+    height: 100%;
+    background-color: rgb(100, 100, 100, .1);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 24px;
+    backdrop-filter: blur(40px);
+    z-index: 2;
+}
+.main_banner-pc:hover > .content > .btn{
+    opacity: 1;
+    /* visibility: visible; */
+}
+.main_banner-pc > .content > .btn{
+    position: absolute;
+    width: 163.04px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    text-transform: capitalize;
+    font-family: 'Graphik LCG';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    /* transition: s; */
+    opacity: 0;
+    /* visibility: hidden; */
+    /* identical to box height */
+
+    bottom: 50px;
+    /* transform: translateY(-50%); */
+    color: #FFFFFF;
+    left: 50px;
+    z-index: 10;
+    height: 43.59px;
+    background: linear-gradient(90deg, #D877F6 15.42%, #6B44B3 87.73%);
+    border-radius: 10px;
+    transition: 1.2s;
+}
+.main_banner-pc > .content > .btn:hover{
+    box-shadow: 0px 0px 10px .5px #D877F6;
+}
+.main_banner-pc > .content > .card > .content > .logo{
+    transform: rotate(16deg);
+    position: absolute;
+    transition: 1.2s;
+    left: 38px;
+    top:37px;
+}
+.main_banner-pc > .content > .card > .content > h3{
+    position: absolute;
+    left: 38px;
+    bottom:37px;
+    transition: 1.2s;
+    font-size: 60px;
+    color:white;
+}
+.main_banner-pc > .content > .card > .content > .figure{
+    transform: rotate(13deg) scale(2.5);
+    position: absolute;
+    transition: 1.2s;
+    right: 78px;
+    top:37px;
+    stroke: #fff;
+}
+.main_banner-pc > .content > .card > .figures{
+    width: 384px;
+    height: 100%;
+    filter:blur(35px);
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    /* background-color: blue; */
+    position: absolute;
+    z-index: 1;
+}
+.main_banner-pc > .content > .card > .figures > .elipse1{
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    border-radius: 100%;
+    left: 30px;
+    /* filter: blur(35px); */
+    top:50%;
+    transform: translateY(-50%);
+    background:#6B44B3;
+}
+.main_banner-pc > .content > .card > .figures > .elipse2{
+    width: 214px;
+    height: 214px;
+    /* filter: blur(35px); */
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    border-radius: 100%;
+    transform: translateY(-50%);
+    background:#D877F6;
+}
+.main_banner-pc:hover > .content > .card .logo,
+.main_banner-pc:hover > .content > .card .figure,
+.main_banner-pc:hover > .content > .card h3{
+    transform-scale:1.02;
+}
+.main_banner-pc > .vectors > .vector_1{
+    position: absolute;
+    width: 532.18px;
+    height: 125px;
+    top: 12.4px;
+    transform: scale(1.5);
+    left:20px;
+}
+.main_banner-pc > .vectors > .vector_2{
+    position: absolute;
+    width: 532.18px;
+    height: 125px;
+    top: 143px;
+    transform: scale(3.5);
+    right: -120px;
+}
+.main_banner-pc > .vectors > .vector_3{
+    position: absolute;
+    width: 532.18px;
+    height: 125px;
+    bottom: 0;
+    /* transform: scale(3); */
+    left:60px;
+}
+.main_banner-pc > .content > .skin{
+    width: 350px;
+    position: absolute;
+    right: -60px;
+    top: -65px;
+    height: 360px;
+    background-image: url(../img/skins/Minecraft\ Skin\ Render\ 1.png);
+    background-size:cover;
+    background-position: center;
+}
+
+
+
+.main_banner-mobile{
+    width: 100%;
+    position: relative;
+    height: 200px; 
+    /* background-color: red; */
+    display: none;
+}
+.main_banner-mobile > .cards{
+    width: 100%;
+    max-width: 500px;
+    margin:0 auto;
+    height: 200px;
+    position: relative;
+}
+.main_banner-mobile > .cards > .card > .figures{
+    width: 100%;
+    height: 100%;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    /* background-color: blue; */
+    position: absolute;
+    z-index: 1;
+}
+.main_banner-mobile > .cards > .card > .figures > .elipse1{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 100%;
+    left: 70px;
+    /* filter: blur(5px); */
+    top:50%;
+    transform: translateY(-50%);
+    background:#6B44B3;
+}
+.main_banner-mobile > .cards > .card:first-child > .figures > .elipse1,
+.main_banner-mobile > .cards > .card:first-child > .figures > .elipse2{
+    background-color: #68B344;
+}
+.main_banner-mobile > .cards > .card:last-child > .figures > .elipse1,
+.main_banner-mobile > .cards > .card:last-child > .figures > .elipse2{
+    background-color: #FF9900;
+}
+.main_banner-mobile > .cards > .card > .figures > .elipse2{
+    width: 80px;
+    height: 80px;
+    /* filter: blur(5px); */
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    border-radius: 100%;
+    transform: translateY(-50%);
+    background:#D877F6;
+}
+.main_banner-mobile > .cards > .card > .content{
+    position: absolute;
+    width: 100%;
+    border:1px solid rgb(90, 90, 90, 1);
+    height: 100%;
+    background-color: rgb(100, 100, 100, .1);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 14px;
+    backdrop-filter: blur(15px);
+    z-index: 2;
+}
+.main_banner-mobile > .btn{
+    position: absolute;
+    box-shadow: 0px 0px 10px 10px #1B1B25;
+    width: 163.04px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    text-transform: capitalize;
+    font-family: 'Graphik LCG';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    /* transition: s; */
+    opacity: 1;
+    /* visibility: hidden; */
+    /* identical to box height */
+
+    bottom: 0px;
+    color: #FFFFFF;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 43.59px;
+    bottom: -5px;
+    background: linear-gradient(90deg, #D877F6 15.42%, #6B44B3 87.73%);
+    border-radius: 10px;
+    transition: 1.2s;
+}
+.main_banner-mobile > .cards > .card{
+    width: 226px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: .3;
+    transition: .3s;
+    border-radius: 14px;
+    height: 132px;
+}
+.main_banner-mobile > .cards > .card > .content > .logo{
+    transform: rotate(16deg) scale(1.7);
+    position: absolute;
+    transition: 1.2s;
+    left: 30px;
+    top:10px;
+}
+.main_banner-mobile > .cards > .card > .content > h3{
+    position: absolute;
+    left: 10px;
+    bottom:10px;
+    transition: 1.2s;
+    font-size: 30px;
+    color:white;
+}
+.main_banner-mobile > .cards > .card > .content > .figure{
+    width: 384px;
+    height: 100%;
+    right: -130px;
+    top: -20px;
+    transform: scale(.6) rotate(15deg);
+    /* background-color: blue; */
+    position: absolute;
+    z-index: 1;
+}
+.main_banner-mobile > .cards > .card > .content > .figures > .figure{
+    filter:blur(40px);
+}
+.main_banner-mobile > .cards > .card.main{
+    opacity: 1;
+    left:50%;
+    /* background-color: red; */
+    z-index: 2;
+    transform: translate(-50%, -50%) rotate(-15deg);
+}
+.main_banner-mobile > .cards >.card:first-child{
+    z-index: 1;
+    /* background-color: blue; */
+    opacity: 0;
+    transform:translateX(100px) translateY(-50%) rotate(-15deg);
+    animation:mob_animation_left 1.2s 1s forwards;
+    left:0px;
+}
+.main_banner-mobile > .cards >.card:last-child{
+    z-index: 1;
+    /* background-color: blue; */
+    right: 0px;
+    opacity: 0;
+    transform:translateX(-100px) translateY(-50%) rotate(15deg);
+    animation:mob_animation_right 1.2s 1s forwards;
+}
+@keyframes mob_animation_right{
+    0%{
+        opacity: 0;
+        transform:translateX(-100px) translateY(-50%) rotate(15deg);
+    }
+    100%{
+        transform:translateX(0px) translateY(-50%) rotate(15deg);
+        opacity: .3;
+    }
+}
+@keyframes mob_animation_left{
+    0%{
+        opacity: 0;
+        transform:translateX(100px) translateY(-50%) rotate(-15deg);
+    }
+    100%{
+        transform:translateX(0px) translateY(-50%) rotate(-15deg);
+        opacity: .3;
+    }
+}
+@media(max-width:1150px){
+    .main_banner-pc{
+        display: none;
+    }
+    .main_banner-mobile{
+        display: block;
+    }
+}
+@media(max-width:992px){
+    .ojdssf{
+        margin-top: 160px;
+    }
+}
+@media(max-width:540px){
+    .main_banner-mobile > .cards >.card:first-child{
+        left:-30px;
+    }
+    .main_banner-mobile > .cards >.card:last-child{
+        right: -100px;
+    }
+}
+.main_banner-mobile .elipse1,
+.main_banner-mobile .elipse2{
+    filter:blur(15px);
+}

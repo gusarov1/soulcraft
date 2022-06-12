@@ -1,0 +1,96 @@
+.possibility {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 1150px;
+  margin: 120px auto;
+
+  transform: translate(0px, 60%);
+  opacity: 0;
+  transition: all 1.2s ease 0.1s;
+}
+
+.possibility._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.possibility-descr-block {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  height: 160px;
+  margin-top: 20px;
+}
+
+.possibility-title {
+  font-size: 58px;
+  letter-spacing: 0.04em;
+  line-height: 0.8;
+}
+
+.possibility-descr {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 35px;
+}
+
+.possibility-image {
+  height: 340px;
+  width: 620px;
+}
+
+.possibility.--2 {
+  flex-direction: row-reverse;
+}
+
+
+.possibility.--4 {
+  flex-direction: row-reverse;
+}
+
+
+.possibility.--6 {
+  flex-direction: row-reverse;
+}
+
+
+.possibility.--8 {
+  flex-direction: row-reverse;
+}
+
+
+.possibility.--10 {
+  flex-direction: row-reverse;
+}
+
+
+.possibility.--12 {
+  flex-direction: row-reverse;
+}
+
+
+.possibility-descr-block.--4 {
+  height: 190px;
+}
+
+
+.possibility-descr-block.--7 {
+  height: 190px;
+}
+
+.possibility-descr-block.--8 {
+  height: 190px;
+}
+
+.possibility-descr-block.--13 {
+  height: 220px;
+}
+
+.possibility-descr-block.--3 {
+  width: 400px;
+}
+
+.possibility-descr-block.--1 {
+    width: 370px;
+}

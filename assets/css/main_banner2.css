@@ -1,0 +1,693 @@
+.main_banner-pc{
+    width:100%;
+    height: 409.7px;
+    max-width: 1160px;
+    margin:0 auto;
+    border-radius: 33px;
+    position: relative;
+    /* overflow: hidden; */
+    background-color: #121212;
+}
+body, html{
+    overflow-x: hidden;
+}
+.main_banner-pc:hover > .vectors{
+    opacity: 0;
+}
+.main_banner-pc > .vectors{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    max-width: 1160px;
+    opacity: 1;
+    transition: 1.2s;
+    z-index: 1;
+    height: 100%;
+}
+.main_banner-pc:hover > .content > h3{
+    filter: blur(5px);
+}
+.main_banner-pc > .content{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    height: 100%;
+}
+.main_banner-pc > .content > h3.first_text{
+    text-transform: uppercase;
+    /* Играй на все 100 */
+    position: absolute;
+    width: 300px;
+    top:42px;
+    transition: 1.2s;
+    left:43px;
+    --webkit-background-clip: text;
+    color: transparent;
+
+    font-family: 'Graphik LCG';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 113px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    text-transform: uppercase;
+    /* text-shadow: 5px 4px 7px rgba(0, 0, 0, 0.27); */
+    /* text-shadow: 0px 0px 1px #FFF; */
+}
+.main_banner-pc > .content > h3.second_text{
+    text-transform: uppercase;
+    /* Играй на все 100 */
+    position: absolute;
+    width: 300px;
+    bottom:10px;
+    left:43px;
+    color:#fff;
+    transition: 1.2s;
+    font-family: 'Graphik LCG';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 113px;
+    text-transform: uppercase;
+    /* text-shadow: 5px 4px 7px rgba(0, 0, 0, 0.27); */
+    /* text-shadow: 0px 0px 1px #FFF; */
+}
+.main_banner-pc > .content > .card{
+    width: 449.78px;
+    height: 262.88px;
+    border-radius: 24px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    overflow: hidden;
+    backdrop-filter: blur(40px) !important;
+    transform-origin: -10px -10px;
+    z-index: 3;
+    animation: main_banner__card_animation 10s ease-in-out infinite;
+    background: transparent;
+    transform:rotate(-5deg) translate(-50%, -50%);
+}
+@keyframes main_banner__card_animation{
+    0%{
+        transform:rotate(-5deg) translate(-50%, -50%);
+    }
+    50%{
+        transform:rotate(5deg) translate(-50%, -50%);
+    }
+    100%{
+        transform:rotate(-5deg) translate(-50%, -50%);
+    }
+}
+.main_banner-pc > .content > .card > .content{
+    border:1px solid rgb(80, 80, 80, 1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(100, 100, 100, .1);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 24px;
+    backdrop-filter: blur(40px);
+    z-index: 2;
+}
+.main_banner-pc:hover > .content > .btn{
+    opacity: 1;
+    /* visibility: visible; */
+}
+.main_banner-pc > .content > .btn{
+    position: absolute;
+    width: 163.04px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    text-transform: capitalize;
+    font-family: 'Graphik LCG';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    /* transition: s; */
+    opacity: 0;
+    /* visibility: hidden; */
+    /* identical to box height */
+
+    bottom: 50px;
+    /* transform: translateY(-50%); */
+    color: #FFFFFF;
+    left: 50px;
+    height: 43.59px;
+    background: linear-gradient(90deg, #D877F6 15.42%, #6B44B3 87.73%);
+    border-radius: 10px;
+    transition: 1.2s;
+}
+.main_banner-pc > .content > .btn:hover{
+    box-shadow: 0px 0px 10px .5px #D877F6;
+}
+.main_banner-pc > .content > .card > .content > .logo{
+    transform: rotate(15deg);
+    position: absolute;
+    transition: 1.2s;
+    left: 38px;
+    top:37px;
+}
+.main_banner-pc > .content > .card > .content > h3{
+    position: absolute;
+    left: 38px;
+    bottom:37px;
+    transition: 1.2s;
+    font-size: 60px;
+    color:white;
+}
+.main_banner-pc > .content > .card > .content > .figure{
+    transform: rotate(13deg) scale(2.5);
+    position: absolute;
+    transition: 1.2s;
+    right: 78px;
+    top:37px;
+    stroke: #fff;
+}
+.main_banner-pc > .content > .card > .figures{
+    width: 384px;
+    height: 100%;
+    left:50%;
+    top:50%;
+    filter: blur(10px);
+    transform: translate(-50%, -50%);
+    /* background-color: blue; */
+    position: absolute;
+    z-index: 1;
+}
+.main_banner-pc > .content > .card > .figures > .elipse1{
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    border-radius: 100%;
+    left: 30px;
+    filter: blur(10px);
+    top:50%;
+    transform: translateY(-50%);
+    background:#6B44B3;
+}
+.main_banner-pc > .content > .card > .figures > .elipse2{
+    width: 214px;
+    height: 214px;
+    filter: blur(10px);
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    border-radius: 100%;
+    transform: translateY(-50%);
+    background:#D877F6;
+}
+.main_banner-pc:hover > .content > .card .logo,
+.main_banner-pc:hover > .content > .card .figure,
+.main_banner-pc:hover > .content > .card h3{
+    transform-scale:1.02;
+}
+.main_banner-pc > .vectors > .vector_1{
+    position: absolute;
+    width: 532.18px;
+    height: 125px;
+    top: 12.4px;
+    transform: scale(1.5);
+    left:20px;
+}
+.main_banner-pc > .vectors > .vector_2{
+    position: absolute;
+    width: 532.18px;
+    height: 125px;
+    top: 143px;
+    transform: scale(3.5);
+    right: -120px;
+}
+.main_banner-pc > .vectors > .vector_3{
+    position: absolute;
+    width: 532.18px;
+    height: 125px;
+    bottom: 0;
+    /* transform: scale(3); */
+    left:60px;
+}
+.main_banner-pc > .content > .skin{
+    width: 500px;
+    position: absolute;
+    right: 40px;
+    top: -65px;
+    height: 510px;
+    background-image: url(../img/skins/Minecraft\ Skin\ Render\ 1.png);
+    background-size:cover;
+    background-position: center;
+}
+
+@media(max-width:1200px){
+    .main_banner-pc > .content > .skin{
+        right: -100px;
+    }
+    .main_banner-pc > .content > .card{
+        right: 10px !important;
+        left: none;
+        width: 300px;
+        height: 200px;
+        top:50%;
+        transform-origin: top center;
+        animation: main_banner__card_animation2 10s ease-in-out infinite;
+        transform: translateY(-50%) !important;
+    }
+    .main_banner-pc > .content > h3{
+        z-index: 100;
+    }
+    .main_banner-pc > .content > .card h3{
+        font-size: 30px !important;
+    }
+    .main_banner-pc > .content > .card .figure{
+        transform: scale(1.5) rotate(16deg) !important;
+        right: 30px !important;
+        top: 20px !important;
+    }
+    .main_banner-pc > .content > .btn{
+        z-index: 300;
+    }
+}
+@keyframes main_banner__card_animation2{
+    0%{
+        transform:rotate(-5deg) translateY(-50%);
+    }
+    50%{
+        transform:rotate(5deg) translateY(-50%);
+    }
+    100%{
+        transform:rotate(-5deg) translateY(-50%);
+    }
+}
+.main_banner-mobile{
+    width: 100%;
+    max-width: 316px;
+    margin: 0 auto;
+    border-radius: 24px;
+    height: 336px;
+    position: relative;
+    background-color: #121212;
+    display: none;
+}
+.main_banner-mobile > .skin{
+    width: 400px;
+    height: 400px;
+    top:-30px;
+    left: 30px;
+    position: absolute;
+    background-image: url(../img/skins/Minecraft\ Skin\ Render\ 1.png);
+    background-size: cover;
+    background-position: center;
+}
+.main_banner-mobile > h3:first-child{
+    text-transform: uppercase;
+    /* Играй на все 100 */
+    position: absolute;
+    width: 200px;
+    top:30px;
+    z-index: 1;
+    transition: 1.2s;
+    left:30px;
+    --webkit-background-clip: text;
+    color: transparent;
+
+    font-family: 'Graphik LCG';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    /* line-height: 113px; */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    text-transform: uppercase;
+    /* text-shadow: 5px 4px 7px rgba(0, 0, 0, 0.27); */
+    /* text-shadow: 0px 0px 1px #FFF; */
+}
+.main_banner-mobile > h3:last-child{
+    text-transform: uppercase;
+    /* Играй на все 100 */
+    position: absolute;
+    width: 300px;
+    top:110px;
+    left:30px;
+    color:#fff;
+    z-index: 1;
+    transition: 1.2s;
+    font-family: 'Graphik LCG';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 113px;
+    text-transform: uppercase;
+    /* text-shadow: 5px 4px 7px rgba(0, 0, 0, 0.27); */
+    /* text-shadow: 0px 0px 1px #FFF; */
+}
+.main_banner-mobile > .card{
+    width:265px;
+    border:.5px solid rgb(90, 90, 90);
+    height: 155px;
+    bottom: -20px;
+    z-index: 2;
+    border-radius: 14px;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%) rotate(-15deg);
+}
+.main_banner-mobile > .card > .content > .logo{
+    transform: rotate(15deg) scale(1.7);
+    position: absolute;
+    transition: 1.2s;
+    left: 40px;
+    top:20px;
+}
+.main_banner-mobile > .card > .content > h3{
+    position: absolute;
+    left: 30px;
+    z-index: 5;
+    bottom:20px;
+    transition: 1.2s;
+    font-size: 30px;
+    color:white;
+}
+.main_banner-mobile > .card > .content > .figure{
+    width: 384px;
+    height: 100%;
+    right: -120px;
+    top: -20px;
+    transform: scale(.6) rotate(15deg);
+    /* background-color: blue; */
+    position: absolute;
+    z-index: 1;
+}
+.main_banner-mobile > .card > .content > .figures > .figure{
+    filter:blur(40px);
+}
+.main_banner-mobile > .card > .figures{
+    width: 100%;
+    height: 100%;
+    filter: blur(40px);
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    /* background-color: blue; */
+    position: absolute;
+    z-index: 1;
+}
+.main_banner-mobile > .card > .figures > .elipse1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 100%;
+    left:120px;
+    filter: blur(25px);
+    top:50%;
+    transform: translateY(-50%);
+    background:#6B44B3;
+}
+@media(max-width:700px){
+    .main_banner-pc{
+        display: none;
+    }
+    .main_banner-mobile{
+        display: block;
+    }
+}
+
+
+
+
+
+
+.main_content-pc{
+    width: 100%;
+    /* max-width: 1200px; */
+    min-height: 100px;
+    margin:0 auto;
+}
+.main_content-pc > .header{
+    width: 100%;
+    height: 1px;
+}
+.main_content-pc > .header > h3{
+    text-align: center;
+    font-family: 'Graphik LCG';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    /* line-height: 141%; */
+    /* identical to box height, or 51px */
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 46px;
+}
+.main_content-pc > .products{
+    width: 100%;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 1200px;
+    margin-top: 89px;
+    /* background: #222330; */
+    border-radius: 16px;
+    height: 331.94px;
+}
+.main_content-pc > .products > .product{
+    width: 301.27px;
+    height: 330.82px;
+    border-radius: 21px;
+    position: relative;
+    border-bottom:1px solid #6B44B3;
+    background-color: 
+    #121212;
+    /* background-color: red; */
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(0px 22px 31px rgba(0, 0, 0, 0.25));
+}
+.main_content-pc > .products > .product:nth-child(3),
+.main_content-pc > .products:nth-child(5) > .product{
+    border-bottom:1px solid #FF9900;
+}
+.main_content-pc > .products > .product:nth-child(2),
+.main_content-pc > .products:nth-child(4) > .product{
+    border-bottom:1px solid #68B344;
+}
+
+
+.main_content-pc > .products > .product > header{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    /* background-color: red; */
+    border-radius: 21px;
+    position: relative;
+    /* border-left:1px solid rgb(90, 90, 90); */
+    border:1px solid #6B44B3;
+    /* border-top:1px solid #6B44B3; */
+    /* border-bottom:1px solid #6B44B3; */
+    /* border-left: transparent; */
+}
+
+.main_content-pc > .products > .product > header > .figures{
+    width: 100%;
+    height: 165px;
+    top:0;
+    background:rgb(120, 120, 120, .2);
+    position: absolute;
+    overflow: hidden;
+}
+.main_content-pc > .products > .product > header > .figures > .figure1{
+    width: 130px;
+    height: 130px;
+    top:50%;
+    transform: translateY(-50%);
+    filter:blur(25px);
+    position: absolute;
+    background: #D877F6;
+    border-radius: 100px;
+    right: 0;
+}
+.main_content-pc > .products > .product:nth-child(2) > header > .figures > .figure1,
+.main_content-pc > .products:nth-child(4) > .product > header > .figures > .figure1{
+    background: #68B344;
+}
+.main_content-pc > .products:nth-child(5) > .product > header > .figures > .figure1,
+.main_content-pc > .products > .product:nth-child(3) > header > .figures > .figure1{
+    background: #FF9900;
+}
+.main_content-pc > .products > .product > header > .content{
+    width: 100%;
+    /* border-top:1px solid #6B44B3; */
+    /* border-top:1px solid #6B44B3; */
+    height: 100%;
+    position: absolute;
+    top:0;
+    /* background-color: red; */
+}
+.main_content-pc > .products > .product > header > .content > .logo{
+    transform: rotate(15deg) scale(2);
+    position: absolute;
+    top:30px;
+    left:40px;
+}
+.main_content-pc > .products > .product > header > .content > h3{
+    font-size:30px;
+    font-family: 'Graphik LCG';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    position: absolute;
+    bottom:30px;
+    left:20px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+.main_content-pc > .products > .product > .content{
+    width: 100%;
+    height: 50%;
+    /* background-color: red; */
+    /* position: absolute; */
+}
+.main_content-pc > .products > .product > .content > h3{
+    position: absolute;
+    font-family: 'Graphik LCG';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 20px;
+/* identical to box height */
+left: 25px;
+margin-top: 35px;
+color: #FFFFFF;
+}
+.main_content-pc > .products > .product > .content > a{
+    width:calc(100% - 50px);
+    margin-left: 25px;
+    height: 50px;    
+    position: absolute;
+    bottom:25px;
+    font-family: 'Graphik LCG';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    /* line-height: 16px; */
+    color:white;
+    display: grid;
+    cursor: pointer;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #D877F6 15.42%, #6B44B3 87.73%);
+    border-radius: 10px;
+}
+.main_content-pc > .products > .product:nth-child(3) > .content > a,
+.main_content-pc > .products:nth-child(5) > .product > .content > a{
+    background: linear-gradient(90deg, #FF9900 15.42%, #FF6F1E 87.73%);
+}
+.main_content-pc > .products > .product:nth-child(2){
+    margin-left: 54px;
+    margin-right: 54px;
+}
+.main_content-pc > .description{
+    width: 100%;
+    min-height: 300px;
+    /* background-color: red; */
+}
+.main_content-pc > .description > header{
+    width: 100%;
+    height: 1px;
+    margin-top: 51px;
+}
+.main_content-pc > .description > header > h3{
+    margin: 0 auto;
+    font-family: 'Graphik LCG';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 141%;
+/* identical to box height, or 51px */
+
+text-transform: uppercase;
+color:#fff;
+    text-align: center;
+}
+.main_content-pc > .description > .content{
+    width: 100%;
+    min-height: 300px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    font-family: 'Graphik LCG';
+font-style: normal;
+font-weight: 400;
+margin-top: 50px;
+font-size: 20px;
+line-height: 29px;
+
+color: #FFFFFF;
+}
+.main_content-pc > .description > .content > .inner{
+    margin-left: 50px;
+}
+.products.pc{
+    display: flex;
+}
+.products.mob{
+    display: none;
+}
+@media(max-width:1050px){
+    
+    .main_content-pc > .description > .content{
+        /* margin-top: 150px; */
+    }
+    .foot{
+        margin-top:20px;
+    }
+    .products.pc{
+        display: none;
+    }
+    .products.mob{
+        display: flex;
+    }
+    .main_content-pc > .description > header{
+        margin-top: 30px;
+    }
+
+}
+
+
+.main_content-pc > .products:nth-child(4) > .product > header,
+.main_content-pc > .products > .product:nth-child(2) > header{
+    border:1px solid #68B344;
+}
+
+.main_content-pc > .products > .product:nth-child(3) > header,
+.main_content-pc > .products:nth-child(5) > .product > header{
+    border:1px solid #FF9900;
+}
+
+
+.product .label{
+    width:122px;
+    height: 32px;
+    position:absolute;
+    z-index: 1;
+    right: 0;
+    border-bottom-left-radius: 24px;
+    border-top-right-radius: 14px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color:#21470E;
+}
+.product:nth-child(2) .label,
+.products.mob:nth-child(4) .product .label{
+    background:#68B344;
+    border: 1px solid #94FF62;
+}
+.product:nth-child(3) .label,
+.products.mob:nth-child(5) .product .label{
+    background: #FF9900;
+    border: 1px solid #FFD362;
+}
